@@ -1,4 +1,4 @@
-var Class = require("../main").Class;
+var Class = require("../main");
 
 exports.testClass = function(t, assert) {
     var A = Class.extend({

@@ -48,9 +48,9 @@ Usage
 
 One example will have to suffice for now:
 ```js
-var Class = require("cls").Class;
+var cls = require("cls");
 
-var BaseClass = Class.extend({
+var BaseClass = cls.extend({
     init: function(a, b) {
         this.sum = a + b;
     },

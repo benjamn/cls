@@ -115,4 +115,4 @@ function extend(newProps) {
     return makeClass(this, newProps || {});
 }
 
-exports.Class = extend.call(function(){});
+module.exports = extend.call(function(){});
