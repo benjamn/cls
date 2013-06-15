@@ -1,33 +1,34 @@
 Introduction
 ---
 
-Standardized class syntax is coming in ECMAScript 6, supposedly, but until
-then I need a class factory that fills the gap.
+Standardized `class` syntax
+[is coming](http://wiki.ecmascript.org/doku.php?id=strawman:maximally_minimal_classes)
+in ECMAScript 6, supposedly, but until then I need a class factory that fills the gap.
 
-For me that means, in no particular order:
+For me that means (in no particular order):
 
 * prototypal inheritance under the hood
 * access to overridden properties (`super`)
 * inheritance of `static` properties
 * `static` constructors
-* a close correspondence to ES6 syntax
+* close correspondence to ES6 syntax
 * ES5/browser compatibility
 * only-pay-for-what-you-use performance
 * excellent test coverage: [![Build Status](https://travis-ci.org/benjamn/cls.png?branch=master)](https://travis-ci.org/benjamn/cls)
-
-Note that I did not mention privacy. If you crave a mechanism like the
-`private` keyword in other languages, I have a separate
-[project](https://npmjs.org/package/private) that works perfectly with
-this one.
 
 I have no delusions of persuading the world to use this tool. Just try
 `npm search inheritance` some time to see how many other people have come
 up with solutions that work for them.
 
-If you have a special interest in the tired me-too problem space of
+If you have a special interest in the tired me-too sport of
 pure-JavaScript class factory implementations, you might find this one
 interesting for its solutions to each of the requirements listed above,
 particularly the lazy (just-in-time) population of prototype properties.
+
+Note that I did not mention privacy enforcement as a requirement. If you
+need a mechanism like the `private` keyword in other languages, I have a
+separate [project](https://npmjs.org/package/private) that works
+seamlessly alongside this one.
 
 Installation
 ---
