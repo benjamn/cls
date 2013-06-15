@@ -63,6 +63,7 @@ function makeClass(base, newProps) {
     // extend between all classes.
     constructor.prototype = ownProto;
     constructor.extend = extend;
+    constructor.base = baseProto;
 
     // Setting constructor.prototype.constructor = constructor is
     // important so that instanceof works properly in all browsers.

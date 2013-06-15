@@ -188,3 +188,32 @@ exports.testStatics = function(t, assert) {
 
     t.finish();
 };
+
+exports.testBaseProperty = function(t, assert) {
+    var A = Class.extend({
+        foo: function() {
+            return "name: " + this.name;
+        }
+    });
+
+    var B = A.extend({
+        name: "B",
+
+        bar: function() {
+            assert.strictEqual(B.base.bar, this._super);
+            return B.base.foo.call(this);
+        }
+    });
+
+    var C = B.extend({
+        name: "C"
+    });
+
+    assert.strictEqual(B.base, A.prototype);
+    assert.strictEqual(C.base, B.prototype);
+
+    assert.strictEqual(new B().bar(), "name: B");
+    assert.strictEqual(new C().bar(), "name: C");
+
+    t.finish();
+};
