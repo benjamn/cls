@@ -9,8 +9,10 @@ function makeClass(base, newProps) {
 
     function constructor() {
         if (!populated) {
-            // Ensure population of baseProto.
-            base.call(populating);
+            if (base.extend === extend) {
+                // Ensure population of baseProto if base created by makeClass.
+                base.call(populating);
+            }
 
             // Wrap override methods to make this._super available.
             populate(ownProto, newProps, baseProto);
