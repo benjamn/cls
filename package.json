@@ -1,0 +1,32 @@
+{
+  "author": "Ben Newman <bn@cs.stanford.edu>",
+  "name": "cls",
+  "description": "Class factory featuring inheritance of static properties, static constructors, lazy population of prototypes, and this._super.",
+  "keywords": [
+    "class",
+    "inheritance",
+    "static",
+    "lazy",
+    "super",
+    "prototype",
+    "extend"
+  ],
+  "version": "0.1.0",
+  "homepage": "http://github.com/benjamn/cls",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/benjamn/cls.git"
+  },
+  "main": "main.js",
+  "scripts": {
+    "test": "whiskey test/run.js"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {
+    "whiskey": "0.6.x"
+  },
+  "engines": {
+    "node": ">= 0.6"
+  }
+}
