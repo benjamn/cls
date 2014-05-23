@@ -17,6 +17,7 @@
     "type": "git",
     "url": "git://github.com/benjamn/cls.git"
   },
+  "license": "MIT",
   "main": "main.js",
   "scripts": {
     "test": "node ./node_modules/mocha/bin/mocha --reporter spec"
