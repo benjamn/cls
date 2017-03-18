@@ -1,6 +1,8 @@
 Introduction
 ---
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/benjamn/cls.svg)](https://greenkeeper.io/)
+
 Standardized `class` syntax
 [is coming](http://wiki.ecmascript.org/doku.php?id=strawman:maximally_minimal_classes)
 in ECMAScript 6, supposedly, but until then I need a class factory that fills the gap.
